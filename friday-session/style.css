@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  /* background-color: #f5f5f5; */
+}
+
+.container {
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* height: 100vh; */
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.container nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+}
+
+.container nav a::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  right: 50%;
+  bottom: -3px;
+  background-color: #000;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.container nav a:hover::before {
+  width: 40%;
+}
+
+.container nav a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  background-color: #000;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.container nav a:hover::after {
+  width: 40%;
+}
+
+.container header .login button {
+  border: 1px solid #1a7bff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.container header .login button:first-child {
+  color: #1a7bff;
+}
+
+.container header .login button:first-child:hover {
+  background-color: #1a7bff;
+  color: #fff;
+}
+.container header .login button:nth-child(2) {
+  color: #fff;
+  background-color: #1a7bff;
+}
+.container header .login button:nth-child(2):hover {
+  background-color: #fff;
+  color: #1a7bff;
+}
+
+.container .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container .hero .left {
+  width: 50%;
+}
+
+.container .hero .left .content {
+  width: 80%;
+}
+
+.container .hero .left .content h3 {
+  color: #1a7bff;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  line-height: 100%;
+}
+.container .hero .left .content h1 {
+  color: black;
+  font-weight: 700;
+  font-size: 48px;
+  font-family: "DM Sans", sans-serif;
+  line-height: 100%;
+  letter-spacing: 0;
+  padding: 10px 0;
+}
+.container .hero .left .content p {
+  color: #b6b6b6;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  line-height: 100%;
+  font-style: normal;
+  letter-spacing: 0;
+  padding: 10px 0;
+}
+
+.container .hero .left .content button {
+  border: none;
+  background-color: #1a7bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .hero .left .content button:hover {
+  opacity: 0.8;
+}
+
+.container .hero .right {
+  width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container .hero {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container .hero .left {
+    width: 100%;
+  }
+  .container .hero .left .content {
+    width: 100%;
+  }
+  .container .hero .right {
+    width: 100%;
+  }
+}
