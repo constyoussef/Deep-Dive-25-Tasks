@@ -123,6 +123,30 @@ header > nav a:hover {
   gap: 1rem;
 }
 
+@media (min-width: 576px) {
+  .projects .cards {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .projects .cards {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .projects .cards {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects .cards {
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+  }
+}
+
 .projects .cards .card {
   /* width: 250px; */
   position: relative;
@@ -142,36 +166,78 @@ header > nav a:hover {
   width: 100%;
   height: 100%;
 }
-.about,
-.contact {
-  max-width: 90%;
-  margin: 0px auto;
+
+.about {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.card {
-  max-width: 21%;
+
+.card-s {
   display: flex;
   flex-direction: column;
 }
-.card img {
+.card-s img {
   max-width: 100%;
 }
+
 button {
   padding: 13px;
   border: none;
   cursor: pointer;
 }
+
 .wrapper {
-  display: flex;
-  gap: 7%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+  }
 }
 .gray {
   color: rgb(218, 212, 212);
 }
-.card button:hover {
+.card-s button:hover {
   background-color: rgba(128, 128, 128, 0.66);
 }
 
 /* contact */
+
+.contact {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact img {
+  margin-bottom: 2px;
+  width: 100%;
+}
+
 form {
   display: flex;
   display: flex;
@@ -194,9 +260,3 @@ footer {
   text-align: center;
   padding: 15px;
 }
-/* @media (max-width:524px)  {
-    .wrapper 
-    {
-        flex-direction: column;
-    }
-} */
