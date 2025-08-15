@@ -177,6 +177,7 @@ header > nav a:hover {
 .card-s {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 .card-s img {
   max-width: 100%;
@@ -251,12 +252,12 @@ form button,
 footer {
   background-color: black;
   color: white;
-  max-width: 13%;
+  width: fit-content;
   font-size: 18px;
 }
 
 footer {
-  max-width: 100%;
+  width: 100%;
   text-align: center;
   padding: 15px;
 }
