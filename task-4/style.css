@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 1rem;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+@media (min-width: 576px) {
+  .products-container {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .products-container {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .products-container {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .products-container {
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  box-shadow: 10px 3px 15px 0px #00000070;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.product .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.product .image img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.product .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.product .content > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.product .content > div span {
+  font-size: 18px;
+}
+
+.product .content > div span:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product button {
+  background-color: rgb(8, 124, 156);
+  text-transform: capitalize;
+  padding: 0.75rem 1rem;
+  margin-top: auto;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: opacity 0.03s;
+  -webkit-transition: opacity 0.03s;
+  -moz-transition: opacity 0.03s;
+  -ms-transition: opacity 0.03s;
+  -o-transition: opacity 0.03s;
+}
+
+.product button:hover {
+  opacity: 0.8;
+}
