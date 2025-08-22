@@ -8,6 +8,11 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -104,4 +109,121 @@ header .buttons button:nth-child(2) {
 
 header .buttons button:hover {
   opacity: 0.8;
+}
+
+.hero {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ebf5ff;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .avatar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card .avatar img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.cards .read-more {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: #49bbbd;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.read-more a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #49bbbd;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.read-more a:hover::before {
+  width: 100%;
+}
+
+.marketing {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.marketing-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.price-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.discount {
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 500;
+  color: #49bbbd;
 }
