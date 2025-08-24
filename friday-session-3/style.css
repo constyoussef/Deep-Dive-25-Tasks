@@ -227,3 +227,42 @@ h1 {
   font-weight: 500;
   color: #49bbbd;
 }
+
+footer {
+  background-color: #252641;
+  height: 500px;
+  top: 2348px;
+  text-align: center;
+}
+.logo2 {
+  position: relative;
+  top: 150px;
+  right: 70px;
+}
+footer span {
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  position: relative;
+  left: 100px;
+  bottom: 50px;
+}
+.for {
+  position: relative;
+  left: 45px;
+}
+.content {
+  color: #b2b3cf;
+  position: relative;
+  top: 200px;
+}
+.content2 {
+  color: #b2b3cf;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 4%;
+  position: relative;
+  top: 220px;
+}

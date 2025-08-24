@@ -6,8 +6,6 @@ async function getBlogs() {
     },
   });
 
-  console.log({ response: response.json });
-
   const data = await response.json();
   console.log({ data });
   const heroCards = document.querySelector("#home .cards");
@@ -89,3 +87,14 @@ async function getArticles() {
 }
 
 getArticles();
+
+/**
+ *
+ *
+ * two
+ * four
+ * one
+ * fife
+ * three
+ *
+ */
